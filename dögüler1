@@ -1,0 +1,28 @@
+print("""******************************************
+KULLANICI GİRİŞİ SİSTEMİ***************************""")
+kullanıcı_adı="bugrahan"
+parola_="1234"
+giriş_hakkı=3
+while True:
+    kullanıcıadı=input("kullanıcı adı:")
+    şifre=input("şifre:")
+    if (kullanıcıadı!=kullanıcı_adı and şifre==parola_):
+        print("kullanıcı adı hatalı............")
+        giriş_hakkı-=1
+    elif (kullanıcıadı==kullanıcı_adı and şifre!=parola_):
+        print("parolanızı doğru giriniz")
+        giriş_hakkı-=1
+    elif (kullanıcıadı!=kullanıcı_adı and şifre!=parola_):
+        print("HATALI ŞİFRE VE HATALI KULLANICI ADI.................")
+        giriş_hakkı-=1
+    else:
+        print("sisteme başarıyla giriş yapıldı")
+        break
+    if (giriş_hakkı==0):
+        print("giriş hakkınız bitmiştir............................")
+        break
+
+
+
+    
+   

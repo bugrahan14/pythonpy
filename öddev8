@@ -1,0 +1,30 @@
+import re
+def parola(şifre):
+    if len(şifre) < 4:
+        return "Şifre çok kisa"
+    elif len(şifre) > 8:
+        return "Şifre en fazla 8 karakter olabilir"
+    if not re.search("[a-z]", şifre):
+        return "Şifre en az bir küçük harf içermeli"
+    if not re.search("[A-Z]", şifre):
+        return "Şifre en az bir büyük harf içermeli"
+    if not re.search("[0-9]", şifre):
+        return "Şifre en az bir rakam içermeli"
+    if not re.search("[()*+,-./]", şifre):
+        return "Şifre izin verilen özel karakterlerden en az birini içermeli"
+    if re.search("[^A-Za-z0-9()*+,-./]", şifre):
+        return "Şifre yalnizca sayi, harf ve izin verilen özel karakterlerden oluşmali"
+    güç_değeri= 0
+    if re.search("[a-z]", şifre):
+        güç_değeri+= 1
+    if re.search("[A-Z]", şifre):
+        güç_değeri+= 1
+    if re.search("[0-9]", şifre):
+        güç_değeri+= 1
+    if re.search("[()*+,-./]", şifre):
+        güç_değeri+= 1
+    return "Geçerli Şifre, Güçlülük Puani: " + str(güç_değeri)
+şifre = input("Lütfen şifrenizi girin: ")
+sonuç = parola(şifre)
+print(sonuç)
+#(search)Bu method, aranılan bir içeriğin ilgili metin içerisinde olup olmadığını kontrol eder.

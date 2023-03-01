@@ -1,0 +1,7 @@
+çap=int(input("çapı giriniz"))
+kenarA=int(input("kenarA giriniz"))
+kenarB=int(input("kenarB giriniz"))
+if kenarA>çap:
+    print("sığar")
+else:
+    print("sığmaz")

@@ -1,0 +1,19 @@
+x=int(input("1.sayıyı giriniz"))
+y=int(input("2.sayıyı giriniz"))
+z=int(input("3.sayıyı giriniz"))
+if x<y<z :
+    print("en büyük sayı{}dır".format(z))
+elif x<z<y :
+    print("en büyük sayı{}dır".format(y))
+elif z<y<x :
+    print("en büyük sayı{}dır".format(x))
+elif y<x<z :
+     print("en büyük sayı{}dır".format(z))
+elif z<x<y :
+      print("en büyük sayı{}dır".format(y))
+else:
+    print("EKSİK YA DA YANLIŞ TUŞLADINIZ.........................................................")
+
+
+
+

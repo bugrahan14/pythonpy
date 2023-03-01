@@ -1,0 +1,16 @@
+print("""********************************
+faktöriyel bulma programı:
+sistemden çıkmak için q'ya basınız***************""")
+while True:
+    sayı=input("sayıyı giriniz:")
+    if (sayı=="q"):
+        print("sistemden çıkılıyor.....")
+        break
+
+
+    else:
+        sayı=int(input("sayı giriniz"))
+        faktöriyel=1
+        for i in range(2,sayı+1):
+            faktöriyel*=i
+        print(faktöriyel)

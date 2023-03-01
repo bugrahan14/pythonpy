@@ -1,0 +1,14 @@
+kilo=int(input("kilonuzun değerini giriniz"))
+boy=int(input("boyunuzu metre cinsinden değerini giriniz"))
+boy_kitle_endeksi=kilo/boy**2
+if boy_kitle_endeksi<18.5 :
+    print("ZAYIF.....")
+elif   18.5<boy_kitle_endeksi<25 :
+    print("NORMAL.....")
+elif 25<boy_kitle_endeksi<30 :
+    print("FAZLA KİLOLU.....")
+elif boy_kitle_endeksi>30 :
+    print("OBEZ......!")
+else:
+    print("NORMAL......")
+    

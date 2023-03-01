@@ -1,0 +1,16 @@
+print("""*****************
+mükemmel sayı bulma programı
+*****************""")
+# mükemmel sayı bölenlerinin toplamı kendisine eşit olan sayıdır.
+sayı=int(input("lütfen bir sayı giriniz"))
+toplam=0
+i=1
+while (i<sayı):
+    if (sayı%i==0):
+        toplam+=i
+    i+=1
+if (toplam==sayı):
+    print("bu sayı mükemmel sayıdır")
+else:
+    print("mükemmel sayı değildir")
+

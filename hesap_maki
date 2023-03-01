@@ -1,0 +1,23 @@
+print("""*******************
+hesap makinesi proramı
+işlemler:
+1.toplma işlemi
+2.çıkarma işlemi
+3.çarpma işlemi
+4.bölme işlemi
+*********************""")
+a=int(input("1.sayıyı giriniz:"))
+b=int(input("2. sayıyı giriniz"))
+işlem=input("işlemi giriniz")
+if işlem=="1":
+    print("{} ile {} nin toplamı {} dir".format(a,b,a+b))
+elif işlem=="2":
+    print("{} ile {} nin farkı {} dir".format(a,b,a-b))
+elif işlem=="3":
+    print("{} ile {} çarpımı {} dır".format(a,b,a*b))
+elif işlem=="4":
+    print("{} ile {} nin bölümü {} dir".format(a,b,a/b))
+else:
+    print("geçersiz işlem")
+
+

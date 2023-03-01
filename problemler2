@@ -1,0 +1,4 @@
+a=int(input("kişinin kilosunu giriniz"))
+b=int(input("kişinin boyunu giriniz metre cinsinden"))
+boy_kilo_indeksi=a/(b**2)
+print(boy_kilo_indeksi)

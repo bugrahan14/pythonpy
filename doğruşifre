@@ -1,0 +1,14 @@
+print("""**********************
+KULLANICI GİRİŞİ*****************""")
+kullanıcı_şifrem="12345"
+kullanıcı_adım="bugrahan"
+kullanıcıadı=input("kullanıcı adı:")
+şifre=input("şifre:")
+if(kullanıcıadı==kullanıcı_adım and şifre!=kullanıcı_şifrem):
+    print("LÜTFEN ŞİFRENİZİ DOĞRU GİRİNİZ........")
+elif(kullanıcıadı!=kullanıcı_adım and şifre==kullanıcı_şifrem):
+    print("LÜTFEN KULLANICI ADINIZI DOĞRU GİRİNİZ.....")
+elif(kullanıcıadı!=kullanıcı_adım and şifre!=kullanıc_şifrem):
+    print("KULLANICI ADI VE ŞİFRENİZİ DOĞRU GİRİNİZ")
+else:
+    print("SİSTEME HOŞGELDİNİZ")

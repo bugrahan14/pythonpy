@@ -1,0 +1,12 @@
+Akenar=int(input("Akenar giriniz"))
+Bkenar=int(input("Bkenar giriniz"))
+Ckenar=int(input("Ckenargiriniz"))
+if Akenar*Akenar=="Bkenar*Bkenar"+"Ckenar*Ckenar":
+    print("dik uçgendir")
+else:
+    print("dik üçgen değildir")
+
+
+
+
+

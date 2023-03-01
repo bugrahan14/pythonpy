@@ -1,0 +1,5 @@
+a=int(input("a:"))
+b=int(input("b:"))
+print("değiştirilmeden önceki hali\na:{}\nb:{}".format(a,b))
+a,b=b,a
+print("değiştirildikten sonraki hali\na:{}\nb:{}".format(a,b))

@@ -1,0 +1,4 @@
+ad=input("ad:")
+soyad=input("soyad:")
+no=input("no:")
+print("{}\n{}\n{}".format(ad,soyad,no))

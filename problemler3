@@ -1,0 +1,5 @@
+x=int(input("km'de otomobilin ne kadar yaktığını giriniz"))
+y=int(input("aracın kaç km yol yaptığını giriniz"))
+z=int(input("güncel yakıt fiyatını giriniz"))
+hesaplanan=x*y*z
+print(hesaplanan)

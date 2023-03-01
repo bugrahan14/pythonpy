@@ -1,0 +1,8 @@
+vize=int(input('vize sınavını giriniz'))
+final=int(input('final sınavını giriniz'))
+x=(vize*0.4+final*0.6)
+print(x)
+if x>59:
+    print('gecer')
+else:
+    print('kalır')

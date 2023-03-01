@@ -1,0 +1,45 @@
+a="python programlama dili"
+print(a.lower())
+# lower tüm metinin küçük harf ile yazılmasını sağlar
+print(a.upper())
+# upper ise tüm harflerin büyük harf ile yazılmasını sağlar
+print(a.replace('a','b'))
+# replace ise bir harf yerine başka bir harf getirmeye yaramaktadır.
+print(a[2])
+# 2.terimi yazdır
+print(a[1:3:4])
+print(a[::-1])
+# cümleyi tersten yazdır
+print(len(a))
+#a değişkenin kaç karakterden oluştuğunu yazdırır.
+print("merhaba\nNasılsın\nBUĞRA")
+#\n print fonksiyonunda yazılanları alt alta yazar
+print("ahmet\tmehmet\tmustafa")
+# \t print fonksiyonunda yazılar arasında boşluk bırakır
+print(type("3.19"))
+# type komutu parantez içindeki girilen komutun tipini belirler
+print(type("buğrahan"))
+# bu tip stringer şeklindedir.Ve str şeklinde kod çalışır
+print('a','b','c','d','e',sep='.')
+# sep fonksiyonu printte arasına koymak istediğimiz işareti yazdırmak için kullanılır
+print('06','08','2004',sep='.')
+print('buğra','mehmet','fatma',sep='\n')
+print('buğra','mehmet','fatma',sep='\t')
+# sep bu şekildede kullanılabilir.
+print(*'python')
+# * \t gibide kullanılabilir.
+print(*'python',sep='|')
+#başka bir kombine biçim ilk önce boşluk yaz sonra arasına bu işarti koy anlamına gelir.
+a=5
+b=8
+print("{}+{}'nin toplamı {}'dır".format(a,b,a+b))
+# formatın bu şekli yukrıda verilmiştir.
+a=43
+b=31
+print("{}+{}'toplamı {}'dır".format(a,b,a+b))
+# parantez içine atanması gereken değişkenleri belirtir.
+print("{1},{2},{0}".format('araba','buğra','fatma'))
+# Burada ise yazılan değişkenlerin hangi sıra ile yazılmasını belirttik.
+print("{:.2f},{:.3f},{:.1f}".format('3,23441','5,345','8,665'))
+# BURADA NEDEN HATA VERDİĞİNİ HOCAYA SOR!!!!!!!!!!!!!!!!!!
+liste=list("elma","portakal","armut")
